@@ -658,3 +658,77 @@ footer.footer .footer-bottom{
 .skills-section .skill-grid{
   margin-top:16px;
 }
+
+/* ===== HERO NAME: UNIFIED SHIMMER + GENTLE FLOAT ===== */
+.hero-name{
+  margin: 0;
+  display: inline-block;
+  line-height: 1.02;
+}
+
+.hero-name-text{
+  display: inline-block;
+  background: linear-gradient(
+    110deg,
+    #2563eb 0%,
+    #4f7cff 22%,
+    #6366f1 45%,
+    #8b5cf6 62%,
+    #60a5fa 80%,
+    #4f46e5 100%
+  );
+  background-size: 260% 100%;
+  background-position: 0% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation:
+    heroNameColor 5s ease-in-out infinite,
+    heroNameFloat 3.2s ease-in-out infinite;
+  will-change: background-position, transform, filter;
+  position: relative;
+}
+
+.hero-name-text::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 12% 35%, rgba(255,255,255,.95) 0 1px, transparent 2px),
+    radial-gradient(circle at 37% 68%, rgba(255,255,255,.85) 0 1px, transparent 2px),
+    radial-gradient(circle at 63% 28%, rgba(255,255,255,.95) 0 1px, transparent 2px),
+    radial-gradient(circle at 88% 58%, rgba(255,255,255,.8) 0 1px, transparent 2px);
+  background-size: 130% 130%;
+  mix-blend-mode: screen;
+  opacity: .3;
+  animation: heroNameSparkle 2.4s ease-in-out infinite;
+}
+
+@keyframes heroNameColor{
+  0%, 100%{
+    background-position: 0% 50%;
+    filter: brightness(1);
+  }
+  50%{
+    background-position: 100% 50%;
+    filter: brightness(1.13);
+  }
+}
+
+@keyframes heroNameFloat{
+  0%, 100%{ transform: translateY(0); }
+  50%{ transform: translateY(-4px); }
+}
+
+@keyframes heroNameSparkle{
+  0%, 100%{ opacity: .18; transform: scale(.995); }
+  50%{ opacity: .9; transform: scale(1.01); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .hero-name-text,
+  .hero-name-text::after{
+    animation: none;
+  }
+}
