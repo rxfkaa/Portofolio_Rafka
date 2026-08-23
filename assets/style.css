@@ -932,3 +932,240 @@ body{background:#020713;overflow-x:hidden}
 .hero-actions .btn.secondary{
   text-align:center !important;
 }
+
+
+/* ===== FINAL THEME CONSISTENCY ===== */
+html[data-theme="light"] .header{
+  background:rgba(250,252,255,.92)!important;
+  border-color:#d8e2f0!important;
+}
+html[data-theme="light"] .nav a{color:#65738a!important}
+html[data-theme="light"] .nav a.active,
+html[data-theme="light"] .nav a:hover{color:#246df5!important}
+html[data-theme="light"] .brand{color:#152033!important}
+html[data-theme="light"] .hero-copy>p,
+html[data-theme="light"] .hero-meta,
+html[data-theme="light"] .profile-list b,
+html[data-theme="light"] .timeline-item h3,
+html[data-theme="light"] .experience-card h3{color:#33445d!important}
+html[data-theme="light"] .portrait-card{
+  border-color:#b9cdf0!important;
+  box-shadow:0 25px 65px rgba(57,91,145,.16)!important;
+}
+html[data-theme="light"] .orbit{
+  opacity:.55!important;
+}
+html[data-theme="light"] .code-badge,
+html[data-theme="light"] .ui-badge,
+html[data-theme="light"] .role-card{
+  background:rgba(255,255,255,.94)!important;
+  border-color:#c8d8ed!important;
+  box-shadow:0 15px 35px rgba(48,75,115,.14)!important;
+}
+html[data-theme="light"] .code-badge{color:#246df5!important}
+html[data-theme="light"] .ui-badge{color:#7357df!important}
+html[data-theme="light"] .role-card strong{color:#152033!important}
+html[data-theme="light"] .role-card span,
+html[data-theme="light"] .role-card small{color:#718097!important}
+html[data-theme="light"] .btn.secondary{
+  color:#20314a!important;
+  background:#fff!important;
+  border-color:#c8d8ed!important;
+}
+html[data-theme="light"] .btn.secondary:hover{
+  color:#246df5!important;
+  border-color:#7aa7f6!important;
+}
+html[data-theme="light"] .hero-meta i{color:#246df5!important}
+html[data-theme="light"] .footer{
+  background:#f4f7fb!important;
+  border-color:#d8e2f0!important;
+}
+html[data-theme="light"] .footer a,
+html[data-theme="light"] .footer p{color:#65738a!important}
+
+
+/* ===== FINAL THEME PASS: seluruh UI mengikuti tema ===== */
+.nav-status{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 11px;border:1px solid var(--border);border-radius:999px;background:var(--panel);color:var(--muted);font-size:8px;font-weight:600;white-space:nowrap}
+.nav-status-dot{width:6px;height:6px;border-radius:50%;background:#35d68b;box-shadow:0 0 10px rgba(53,214,139,.7);animation:navStatusPulse 1.8s ease-in-out infinite}
+@keyframes navStatusPulse{0%,100%{transform:scale(1);opacity:.75}50%{transform:scale(1.35);opacity:1}}
+
+html[data-theme="light"] .header{background:rgba(248,251,255,.9)!important;border-color:#d5dfeb!important}
+html[data-theme="light"] .nav a{color:#627086!important}
+html[data-theme="light"] .nav a:hover,html[data-theme="light"] .nav a.active{color:#152033!important}
+html[data-theme="light"] .brand{color:#152033!important}
+html[data-theme="light"] .nav-status,html[data-theme="light"] .theme-switch,html[data-theme="light"] .menu-btn{background:#fff!important;color:#152033!important;border-color:#d5dfeb!important}
+html[data-theme="light"] .hero h1 span{background:linear-gradient(90deg,#246df5,#7354e8)!important;-webkit-background-clip:text!important;background-clip:text!important}
+html[data-theme="light"] .hero h2{color:#246df5!important}
+html[data-theme="light"] .hero-copy>p,html[data-theme="light"] .hero-meta,html[data-theme="light"] .project-count,html[data-theme="light"] .timeline-item p,html[data-theme="light"] .about-panel p,html[data-theme="light"] .contact-panel>p{color:#627086!important;opacity:1!important}
+html[data-theme="light"] .eyebrow{color:#246df5!important;background:#edf4ff!important;border-color:#c9daf2!important}
+html[data-theme="light"] .portrait-card{background:#fff!important;border-color:#c8d8ed!important;box-shadow:0 25px 65px rgba(37,67,105,.16)!important}
+html[data-theme="light"] .orbit{border-color:rgba(36,109,245,.3)!important}
+html[data-theme="light"] .code-badge,html[data-theme="light"] .ui-badge,html[data-theme="light"] .role-card{background:rgba(255,255,255,.96)!important;border-color:#c8d8ed!important;box-shadow:0 15px 35px rgba(37,67,105,.12)!important}
+html[data-theme="light"] .code-badge{color:#246df5!important}html[data-theme="light"] .ui-badge{color:#7354e8!important}
+html[data-theme="light"] .role-card strong,html[data-theme="light"] .profile-list b,html[data-theme="light"] .timeline-item h3,html[data-theme="light"] .skill b,html[data-theme="light"] .bar-label,html[data-theme="light"] .bar-label strong,html[data-theme="light"] .bar-label b{color:#152033!important}
+html[data-theme="light"] .role-card span,html[data-theme="light"] .role-card small,html[data-theme="light"] .profile-list span{color:#718097!important}
+html[data-theme="light"] .about-skills,html[data-theme="light"] .about-section .about-panel,html[data-theme="light"] .skills-section .skills-panel,html[data-theme="light"] .panel,html[data-theme="light"] .project-card,html[data-theme="light"] .contact-panel{background:#fff!important;border-color:#d5dfeb!important;box-shadow:0 18px 45px rgba(32,61,100,.08)!important}
+html[data-theme="light"] .skills-panel{border-left-color:#d5dfeb!important}
+html[data-theme="light"] .skill,html[data-theme="light"] .skill-bars,html[data-theme="light"] .contact-list a,html[data-theme="light"] .text-btn{background:#f8fbff!important;border-color:#d5dfeb!important;color:#152033!important}
+html[data-theme="light"] .bar-track{background:#e3eaf3!important}
+html[data-theme="light"] .tags span{background:#eef4fb!important;border-color:#d5e1ef!important;color:#42658e!important}
+html[data-theme="light"] .project-body h3,html[data-theme="light"] .project-body>a{color:#152033!important}
+html[data-theme="light"] .project-body p{color:#627086!important}
+html[data-theme="light"] .project-body>a:hover,html[data-theme="light"] .text-btn:hover{color:#246df5!important;border-color:#7aa7f6!important}
+html[data-theme="light"] .footer{background:#eef3f9!important;border-color:#d5dfeb!important}
+html[data-theme="light"] .footer-brand p,html[data-theme="light"] .footer-col a,html[data-theme="light"] .footer-col span,html[data-theme="light"] .footer-bottom{color:#627086!important}
+html[data-theme="light"] .socials a{background:#fff!important;border-color:#d5dfeb!important;color:#65738a!important}
+html[data-theme="light"] #topBtn{background:#fff!important;border-color:#d5dfeb!important;color:#246df5!important}
+@media(max-width:850px){.nav-status{display:none!important}}
+
+/* ===== FINAL COMPLETE LIGHT THEME OVERRIDE ===== */
+html[data-theme="light"] .header,
+html[data-theme="light"] .nav,
+html[data-theme="light"] .nav.open,
+html[data-theme="light"] .nav-actions,
+html[data-theme="light"] .theme-switch,
+html[data-theme="light"] .menu-btn,
+html[data-theme="light"] .nav-status,
+html[data-theme="light"] .about-skills,
+html[data-theme="light"] .about-panel,
+html[data-theme="light"] .skills-panel,
+html[data-theme="light"] .skill,
+html[data-theme="light"] .skill-bars,
+html[data-theme="light"] .project-card,
+html[data-theme="light"] .panel,
+html[data-theme="light"] .contact-panel,
+html[data-theme="light"] .contact-list a,
+html[data-theme="light"] .focus-list>div,
+html[data-theme="light"] .role-card,
+html[data-theme="light"] .code-badge,
+html[data-theme="light"] .ui-badge,
+html[data-theme="light"] .text-btn,
+html[data-theme="light"] #topBtn,
+html[data-theme="light"] .footer,
+html[data-theme="light"] .socials a {
+  background-color: var(--panel) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+html[data-theme="light"] .site-bg{
+  background:
+    radial-gradient(circle at 10% 15%,rgba(36,109,245,.10),transparent 28%),
+    radial-gradient(circle at 90% 45%,rgba(115,84,232,.09),transparent 30%),
+    linear-gradient(180deg,#f8fbff 0%,#edf3f9 100%) !important;
+}
+html[data-theme="light"] .site-bg:after{opacity:.12 !important}
+html[data-theme="light"] .project-image{background:#dfe8f3 !important}
+html[data-theme="light"] .project-image:after{background:linear-gradient(180deg,transparent 48%,rgba(23,40,64,.45)) !important}
+html[data-theme="light"] .contact-list a>span{background:#e8f1ff !important;color:#246df5 !important}
+html[data-theme="light"] .tags span{background:#edf4fb !important;color:#42658e !important;border-color:#d3dfed !important}
+html[data-theme="light"] .btn.secondary,
+html[data-theme="light"] .project-body>a{background:#fff !important;color:#20314a !important;border-color:#cbd9ea !important}
+html[data-theme="light"] .hero h1 strong,
+html[data-theme="light"] h2,
+html[data-theme="light"] .about-panel h2,
+html[data-theme="light"] .skills-panel h2,
+html[data-theme="light"] .panel h2,
+html[data-theme="light"] .contact-panel h2,
+html[data-theme="light"] .project-body h3,
+html[data-theme="light"] .timeline-item h3,
+html[data-theme="light"] .role-card strong,
+html[data-theme="light"] .profile-list b,
+html[data-theme="light"] .bar-label,
+html[data-theme="light"] .bar-label strong,
+html[data-theme="light"] .bar-label b,
+html[data-theme="light"] .skill b,
+html[data-theme="light"] .contact-list b,
+html[data-theme="light"] .footer-col h4,
+html[data-theme="light"] .footer-logo{
+  color:#152033 !important;
+}
+html[data-theme="light"] .hero-copy>p,
+html[data-theme="light"] .about-panel p,
+html[data-theme="light"] .profile-list span,
+html[data-theme="light"] .project-body p,
+html[data-theme="light"] .timeline-item p,
+html[data-theme="light"] .focus-list span,
+html[data-theme="light"] .contact-panel>p,
+html[data-theme="light"] .contact-list small,
+html[data-theme="light"] .footer-brand p,
+html[data-theme="light"] .footer-col a,
+html[data-theme="light"] .footer-col span,
+html[data-theme="light"] .footer-bottom,
+html[data-theme="light"] .project-count,
+html[data-theme="light"] .hero-meta{
+  color:#627086 !important;
+  opacity:1 !important;
+}
+html[data-theme="light"] .hero h2,
+html[data-theme="light"] .section-kicker,
+html[data-theme="light"] .timeline-item>span,
+html[data-theme="light"] .project-body>a,
+html[data-theme="light"] .footer-col a:hover,
+html[data-theme="light"] .socials a:hover{
+  color:#246df5 !important;
+}
+html[data-theme="light"] .bar-track{background:#dfe7f1 !important}
+html[data-theme="light"] .orbit{border-color:rgba(36,109,245,.25) !important}
+html[data-theme="light"] .orbit-a{border-top-color:#7354e8 !important}
+html[data-theme="light"] .orbit-b{border-right-color:#246df5 !important}
+html[data-theme="light"] .portrait-card{background:#fff !important;border-color:#cbd9ea !important}
+
+/* ===== REQUESTED REVISION: NAMA RINGAN BERGERAK ===== */
+.hero-name-text{
+  animation:
+    heroNameColor 5s ease-in-out infinite,
+    heroNameFloat 2.8s ease-in-out infinite !important;
+  will-change: transform, background-position, filter;
+}
+.hero-name-text::after{
+  animation: heroNameSparkle 2.1s ease-in-out infinite !important;
+}
+/* Tetap bergerak meskipun sistem operasi meminta reduced motion,
+   karena animasi nama memang diminta pengguna. */
+@media (prefers-reduced-motion: reduce){
+  .hero-name-text,
+  .hero-name-text::after{
+    animation-duration: 5s, 2.8s !important;
+    animation-iteration-count: infinite !important;
+    animation-play-state: running !important;
+  }
+}
+
+/* ===== DARK ONLY: project tidak punya kotak pembungkus ===== */
+html[data-theme="dark"] .projects{
+  background:transparent !important;
+  background-color:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+html[data-theme="dark"] .project-grid{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+
+/* ===== FINAL DARK PROJECT CLEANUP =====
+   Dark mode: project cards do not draw an extra box.
+   Light mode remains exactly as before.
+*/
+html[data-theme="dark"] .projects .project-card{
+  background:var(--panel) !important;
+  border:1px solid var(--border) !important;
+  border-radius:14px !important;
+  box-shadow:0 10px 35px rgba(0,0,0,.14) !important;
+  overflow:hidden !important;
+}
+html[data-theme="dark"] .projects .project-card:hover{
+  border-color:#4b6eac !important;
+  box-shadow:0 20px 48px rgba(0,0,0,.22),0 0 24px color-mix(in srgb,var(--accent) 9%,transparent) !important;
+}
+html[data-theme="dark"] .projects .project-body{
+  background:var(--panel) !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+html[data-theme="dark"] .projects .project-image{
+  border-radius:0 !important;
+  box-shadow:none !important;
+}

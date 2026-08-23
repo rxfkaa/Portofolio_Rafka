@@ -13,8 +13,8 @@ function setTheme(theme){
   const themeMeta=document.querySelector('meta[name="theme-color"]');
   if(themeMeta) themeMeta.setAttribute("content",theme==="light"?"#f5f8fc":"#030711");
 }
-const saved=localStorage.getItem("portfolio-theme") || localStorage.getItem("cv-theme");
-setTheme(saved==="light"?"light":"dark");
+const saved=localStorage.getItem("portfolio-theme") || localStorage.getItem("cv-theme") || "dark";
+setTheme(saved === "light" ? "light" : "dark");
 
 if(themeToggle) themeToggle.addEventListener("click",()=>setTheme(html.dataset.theme==="light"?"dark":"light"));
 if(menuBtn && nav) menuBtn.addEventListener("click",()=>nav.classList.toggle("open"));
@@ -113,4 +113,12 @@ document.querySelectorAll(".project-card[data-project]").forEach(card=>{
       window.location.href=card.dataset.project;
     }
   });
+});
+
+/* RAFKA_THEME_STORAGE_SYNC */
+window.addEventListener("storage", (e)=>{
+  if(e.key === "portfolio-theme" || e.key === "cv-theme"){
+    const t = e.newValue === "light" ? "light" : "dark";
+    setTheme(t);
+  }
 });

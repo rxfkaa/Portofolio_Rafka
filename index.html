@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="id" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -53,10 +53,10 @@ html[data-theme="light"] .bar i{background:var(--panel-2)!important}
     </nav>
 
     <div class="nav-actions">
+      <div class="nav-status" aria-label="Status website"><span class="nav-status-dot"></span><span>Aktif berkarya</span></div>
       <button class="theme-switch" id="themeToggle" aria-label="Ganti tema" title="Ganti tema">
         <span class="theme-icon">☾</span>
       </button>
-      <a class="cv-btn" href="assets/CV-Rafka.pdf" target="_blank" rel="noopener">Download CV <span></span></a>
       <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
     </div>
   </div>
@@ -139,7 +139,7 @@ html[data-theme="light"] .bar i{background:var(--panel-2)!important}
   </div>
 </section>
 
-  <section class="projects section-pad" id="projects">
+   <section class="projects section-pad" id="projects">
     <div class="section-head reveal">
       <div>
         <div class="section-kicker"><h2>Projects</h2></div>
@@ -220,7 +220,7 @@ html[data-theme="light"] .bar i{background:var(--panel-2)!important}
       <div class="section-kicker"><h2>Contact</h2></div>
       <p>Terbuka untuk belajar, berkolaborasi, dan mengembangkan kemampuan di lingkungan kerja profesional.</p>
       <div class="contact-list">
-        <a href="mailto:rafkaaleandra06@gmail.com "><span class="contact-icon email-icon"><i class="fas fa-envelope"></i></span><div><small>Email</small><b>rafkaaleandra06@gmail.com</b></div></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafkaaleandra06@email.com  "><span class="contact-icon email-icon"><i class="fas fa-envelope"></i></span><div><small>Email</small><b>rafkaaleandra06@gmail.com</b></div></a>
         <a href="https://wa.me/6287719095778" target="_blank" rel="noopener"><span class="contact-icon wa-icon"><i class="fab fa-whatsapp"></i></span><div><small>WhatsApp</small><b>+62 877-1909-5778</b></div></a>
         <a href="https://instagram.com/rfkaaleandra" target="_blank" rel="noopener"><span class="contact-icon ig-icon"><i class="fab fa-instagram"></i></span><div><small>Instagram</small><b>@rfkaaleandra</b></div></a>
       </div>
@@ -243,3 +243,378 @@ html[data-theme="light"] .bar i{background:var(--panel-2)!important}
 </body>
 </html>
 
+
+<style id="RAFKA-FINAL-THEME-OVERRIDE">
+
+/* =========================================================
+   Rafka — FINAL GLOBAL THEME OVERRIDE
+   Semua permukaan, teks, border, footer, detail project,
+   tombol, form, dan dekorasi mengikuti data-theme.
+   ========================================================= */
+html[data-theme="light"]{
+  --bg:#f4f7fb !important;
+  --bg-soft:#eaf0f7 !important;
+  --panel:#ffffff !important;
+  --panel-2:#f7faff !important;
+  --text:#152033 !important;
+  --muted:#617088 !important;
+  --muted-2:#7f8ca0 !important;
+  --border:#d3deeb !important;
+  --accent:#246df5 !important;
+  --accent-2:#7354e8 !important;
+  --track:#dfe7f1 !important;
+}
+html[data-theme="dark"]{
+  --bg:#030711 !important;
+  --bg-soft:#060d1a !important;
+  --panel:#071323 !important;
+  --panel-2:#091728 !important;
+  --text:#f5f7fb !important;
+  --muted:#8493a8 !important;
+  --muted-2:#617188 !important;
+  --border:#1d3350 !important;
+  --accent:#4d9cff !important;
+  --accent-2:#7a58ff !important;
+  --track:#13243b !important;
+}
+
+html[data-theme="light"] body{
+  background:var(--bg)!important;
+  background-color:var(--bg)!important;
+  color:var(--text)!important;
+}
+html[data-theme="dark"] body{
+  background:var(--bg)!important;
+  background-color:var(--bg)!important;
+  color:var(--text)!important;
+}
+
+/* Main portfolio */
+html[data-theme="light"] .site-bg{
+  background:
+    radial-gradient(circle at 10% 15%,rgba(36,109,245,.10),transparent 28%),
+    radial-gradient(circle at 90% 45%,rgba(115,84,232,.09),transparent 30%),
+    linear-gradient(180deg,#f8fbff,#edf3f9)!important;
+}
+html[data-theme="dark"] .site-bg{
+  background:
+    radial-gradient(circle at 12% 15%,rgba(39,105,255,.08),transparent 25%),
+    radial-gradient(circle at 88% 45%,rgba(132,74,255,.07),transparent 27%),
+    linear-gradient(180deg,#030711,#060d1a)!important;
+}
+
+html[data-theme="light"] .header,
+html[data-theme="light"] .nav,
+html[data-theme="light"] .nav.open,
+html[data-theme="light"] .nav-actions,
+html[data-theme="light"] .theme-switch,
+html[data-theme="light"] .menu-btn{
+  background:#fff!important;background-color:#fff!important;
+  color:#152033!important;border-color:#d3deeb!important;
+}
+html[data-theme="dark"] .header,
+html[data-theme="dark"] .nav,
+html[data-theme="dark"] .theme-switch,
+html[data-theme="dark"] .menu-btn{
+  color:#f5f7fb!important;border-color:#1d3350!important;
+}
+html[data-theme="light"] .brand,
+html[data-theme="light"] .nav a,
+html[data-theme="light"] .nav a.active,
+html[data-theme="light"] .nav a:hover{
+  color:#152033!important;
+}
+html[data-theme="light"] .nav a.active,
+html[data-theme="light"] .nav a:hover{color:#246df5!important}
+
+html[data-theme="light"] .about-skills,
+html[data-theme="light"] .about-panel,
+html[data-theme="light"] .skills-panel,
+html[data-theme="light"] .skill,
+html[data-theme="light"] .skill-bars,
+html[data-theme="light"] .project-card,
+html[data-theme="light"] .panel,
+html[data-theme="light"] .contact-panel,
+html[data-theme="light"] .contact-list a,
+html[data-theme="light"] .focus-list>div,
+html[data-theme="light"] .text-btn,
+html[data-theme="light"] #topBtn{
+  background:#fff!important;background-color:#fff!important;
+  color:#152033!important;border-color:#d3deeb!important;
+  box-shadow:0 18px 48px rgba(32,61,100,.08)!important;
+}
+html[data-theme="light"] .skill b,
+html[data-theme="light"] .profile-list b,
+html[data-theme="light"] .bar-label,
+html[data-theme="light"] .bar-label strong,
+html[data-theme="light"] .bar-label b,
+html[data-theme="light"] .timeline-item h3,
+html[data-theme="light"] .project-body h3,
+html[data-theme="light"] .contact-list b,
+html[data-theme="light"] .role-card strong{
+  color:#152033!important;
+}
+html[data-theme="light"] .hero-copy>p,
+html[data-theme="light"] .about-panel p,
+html[data-theme="light"] .profile-list span,
+html[data-theme="light"] .project-body p,
+html[data-theme="light"] .timeline-item p,
+html[data-theme="light"] .focus-list span,
+html[data-theme="light"] .contact-panel>p,
+html[data-theme="light"] .contact-list small,
+html[data-theme="light"] .project-count,
+html[data-theme="light"] .hero-meta,
+html[data-theme="light"] .footer-col a,
+html[data-theme="light"] .footer-col span,
+html[data-theme="light"] .footer-brand p,
+html[data-theme="light"] .footer-bottom{
+  color:#617088!important;opacity:1!important;
+}
+html[data-theme="light"] .bar-track{background:#dfe7f1!important}
+html[data-theme="light"] .project-image{background:#e3ebf4!important}
+html[data-theme="light"] .tags span{background:#edf4fb!important;color:#42658e!important;border-color:#d3dfed!important}
+html[data-theme="light"] .project-body>a,
+html[data-theme="light"] .btn.secondary{
+  background:#fff!important;color:#20314a!important;border-color:#cbd9ea!important;
+}
+html[data-theme="light"] .portrait-card,
+html[data-theme="light"] .role-card,
+html[data-theme="light"] .code-badge,
+html[data-theme="light"] .ui-badge{
+  background:#fff!important;color:#152033!important;border-color:#cbd9ea!important;
+}
+html[data-theme="light"] .role-card span,
+html[data-theme="light"] .role-card small{color:#718097!important}
+html[data-theme="light"] .orbit{border-color:rgba(36,109,245,.28)!important}
+html[data-theme="light"] .orbit-a{border-top-color:#7354e8!important}
+html[data-theme="light"] .orbit-b{border-right-color:#246df5!important}
+
+/* ===== PROJECT DETAIL: tidak boleh tersisa warna gelap ===== */
+html[data-theme="light"] nav{
+  background:rgba(255,255,255,.96)!important;
+  background-color:rgba(255,255,255,.96)!important;
+  color:#152033!important;border-color:#d3deeb!important;
+}
+html[data-theme="light"] nav .back-link,
+html[data-theme="light"] .back-link{color:#152033!important}
+html[data-theme="light"] main{background:transparent!important;color:#152033!important}
+html[data-theme="light"] main h1{
+  background:linear-gradient(90deg,#152033,#246df5,#7354e8)!important;
+  -webkit-background-clip:text!important;background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;
+}
+html[data-theme="light"] main h2{color:#246df5!important}
+html[data-theme="light"] main p,
+html[data-theme="light"] main li{color:#617088!important}
+html[data-theme="light"] .feature-card,
+html[data-theme="light"] .project-gallery-item,
+html[data-theme="light"] .project-single-image,
+html[data-theme="light"] .info-card,
+html[data-theme="light"] .card{
+  background:#fff!important;background-color:#fff!important;
+  color:#152033!important;border-color:#d3deeb!important;
+  box-shadow:0 18px 45px rgba(32,61,100,.08)!important;
+}
+html[data-theme="light"] .feature-card strong,
+html[data-theme="light"] .feature-card b,
+html[data-theme="light"] .feature-card h3{color:#152033!important}
+html[data-theme="light"] .feature-card i,
+html[data-theme="light"] .status-badge i{color:#246df5!important}
+html[data-theme="light"] .project-meta-tag{
+  background:#edf4fb!important;color:#246df5!important;border-color:#b9cdf0!important;
+}
+html[data-theme="light"] .btn{
+  background:#fff!important;background-color:#fff!important;
+  color:#20314a!important;border-color:#cbd9ea!important;
+}
+html[data-theme="light"] .btn:hover{background:#edf4fb!important;color:#246df5!important}
+
+/* Footer detail: override style lama yang memakai #0b0c10 !important */
+html[data-theme="light"] footer.footer,
+html[data-theme="light"] footer.footer.footer,
+html[data-theme="light"] footer{
+  background:#eaf0f7!important;background-color:#eaf0f7!important;
+  color:#152033!important;border-top-color:#d3deeb!important;
+  box-shadow:none!important;
+}
+html[data-theme="light"] footer .footer-contact-btn{
+  background:#fff!important;color:#617088!important;border-color:#d3deeb!important;
+}
+html[data-theme="light"] footer .footer-line{background:#d3deeb!important}
+html[data-theme="light"] footer .footer-bottom p{color:#617088!important}
+
+/* Tema gelap pada detail juga dipaksa kembali ke palet utama */
+html[data-theme="dark"] nav{background:rgba(3,7,17,.92)!important;color:#f5f7fb!important;border-color:#1d3350!important}
+html[data-theme="dark"] main{background:transparent!important;color:#f5f7fb!important}
+html[data-theme="dark"] main p,html[data-theme="dark"] main li{color:#8493a8!important}
+html[data-theme="dark"] .feature-card,
+html[data-theme="dark"] .project-gallery-item,
+html[data-theme="dark"] .project-single-image,
+html[data-theme="dark"] .info-card,
+html[data-theme="dark"] .card{
+  background:#071323!important;background-color:#071323!important;color:#f5f7fb!important;border-color:#1d3350!important;
+}
+html[data-theme="dark"] footer.footer,html[data-theme="dark"] footer{
+  background:#060d1a!important;background-color:#060d1a!important;color:#f5f7fb!important;border-top-color:#1d3350!important;
+}
+
+/* Sinkronisasi class lama agar tidak ada aturan body.light-mode yang bertabrakan */
+html[data-theme="light"] body.light-mode,
+html[data-theme="light"] body.light-mode .footer{background:var(--bg)!important;color:var(--text)!important}
+
+@media(max-width:700px){
+  html[data-theme="light"] nav{background:#fff!important}
+}
+
+</style>
+
+<style id="CENTRAL-THEME-ENGINE">
+
+/* ==========================================================
+   Rafka — CENTRAL THEME ENGINE
+   Jangan memberi warna halaman satu per satu. Semua warna
+   penting diarahkan ke token berikut.
+   ========================================================== */
+html[data-theme="dark"]{
+  --bg:#030711 !important;
+  --bg-soft:#060d1a !important;
+  --panel:#071323 !important;
+  --panel-2:#0b1729 !important;
+  --text:#f5f7fb !important;
+  --muted:#8493a8 !important;
+  --muted-2:#617188 !important;
+  --border:#1d3350 !important;
+  --track:#13243b !important;
+  --accent:#4d9cff !important;
+  --accent-2:#7a58ff !important;
+  --accent-main:#4d9cff !important;
+  --accent-2-main:#7a58ff !important;
+  --accent-color:#4d9cff !important;
+  --text-main:#f5f7fb !important;
+  --text-color:#f5f7fb !important;
+  --text-muted:#8493a8 !important;
+  --muted-main:#8493a8 !important;
+  --bg-main:radial-gradient(circle at center,#10182b 0%,#030711 72%) !important;
+  --bg-color:#030711 !important;
+  --card-bg:#071323 !important;
+  --card-bg-2:#0b1729 !important;
+  --card-border:#1d3350 !important;
+  --nav-bg:rgba(3,7,17,.94) !important;
+  --footer-bg:#060d1a !important;
+  --tag-bg:rgba(77,156,255,.10) !important;
+  --shadow-main:0 20px 55px rgba(0,0,0,.28) !important;
+}
+html[data-theme="light"]{
+  --bg:#f4f7fb !important;
+  --bg-soft:#edf3f9 !important;
+  --panel:#ffffff !important;
+  --panel-2:#f8fbff !important;
+  --text:#172238 !important;
+  --muted:#627086 !important;
+  --muted-2:#7f8ca0 !important;
+  --border:#d4dfec !important;
+  --track:#e0e8f2 !important;
+  --accent:#246df5 !important;
+  --accent-2:#7354e8 !important;
+  --accent-main:#246df5 !important;
+  --accent-2-main:#7354e8 !important;
+  --accent-color:#246df5 !important;
+  --text-main:#172238 !important;
+  --text-color:#172238 !important;
+  --text-muted:#627086 !important;
+  --muted-main:#627086 !important;
+  --bg-main:radial-gradient(circle at center,#f8fbff 0%,#e9eff6 72%) !important;
+  --bg-color:#f4f7fb !important;
+  --card-bg:#ffffff !important;
+  --card-bg-2:#f8fbff !important;
+  --card-border:#d4dfec !important;
+  --nav-bg:rgba(255,255,255,.94) !important;
+  --footer-bg:#eaf0f7 !important;
+  --tag-bg:rgba(36,109,245,.09) !important;
+  --shadow-main:0 20px 55px rgba(32,61,100,.10) !important;
+}
+
+/* Universal surfaces: theme token wins. */
+html[data-theme="light"] body,
+html[data-theme="light"] main{
+  background-color:var(--bg)!important;
+  color:var(--text)!important;
+}
+html[data-theme="dark"] body,
+html[data-theme="dark"] main{
+  background-color:var(--bg)!important;
+  color:var(--text)!important;
+}
+html[data-theme="light"] nav{background:var(--nav-bg)!important;color:var(--text)!important;border-color:var(--border)!important}
+html[data-theme="dark"] nav{background:var(--nav-bg)!important;color:var(--text)!important;border-color:var(--border)!important}
+html[data-theme="light"] footer,
+html[data-theme="dark"] footer{background:var(--footer-bg)!important;color:var(--text)!important;border-color:var(--border)!important}
+
+/* Inline project pages have their own card classes. */
+html[data-theme="light"] .feature-card,
+html[data-theme="light"] .project-gallery-item,
+html[data-theme="light"] .project-single-image,
+html[data-theme="light"] .info-card,
+html[data-theme="light"] .project-card,
+html[data-theme="light"] .panel,
+html[data-theme="light"] .card{
+  background:var(--card-bg)!important;
+  color:var(--text)!important;
+  border-color:var(--card-border)!important;
+}
+html[data-theme="dark"] .feature-card,
+html[data-theme="dark"] .project-gallery-item,
+html[data-theme="dark"] .project-single-image,
+html[data-theme="dark"] .info-card,
+html[data-theme="dark"] .project-card,
+html[data-theme="dark"] .panel,
+html[data-theme="dark"] .card{
+  background:var(--card-bg)!important;
+  color:var(--text)!important;
+  border-color:var(--card-border)!important;
+}
+
+/* Do not let hard-coded text colors survive. */
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] h4,
+html[data-theme="light"] h5,
+html[data-theme="light"] h6,
+html[data-theme="light"] strong,
+html[data-theme="light"] b{color:var(--text)!important}
+html[data-theme="light"] p,
+html[data-theme="light"] li,
+html[data-theme="light"] small{color:var(--muted)!important}
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] strong,
+html[data-theme="dark"] b{color:var(--text)!important}
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] small{color:var(--muted)!important}
+
+html[data-theme="light"] .bar-track{background:var(--track)!important}
+html[data-theme="dark"] .bar-track{background:var(--track)!important}
+html[data-theme="light"] input,
+html[data-theme="light"] textarea,
+html[data-theme="light"] select{background:var(--panel)!important;color:var(--text)!important;border-color:var(--border)!important}
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select{background:var(--panel)!important;color:var(--text)!important;border-color:var(--border)!important}
+
+/* Buttons/control */
+html[data-theme="light"] .theme-toggle,
+html[data-theme="light"] .theme-switch,
+html[data-theme="light"] .menu-btn,
+html[data-theme="light"] button{border-color:var(--border)!important}
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .theme-switch,
+html[data-theme="dark"] .menu-btn,
+html[data-theme="dark"] button{border-color:var(--border)!important}
+
+</style>
